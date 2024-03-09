@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  ConMesura
 //
-//  Created by Carlos Román Alcaide on 8/3/24.
+//  Created by cromanalcaidev on 8/3/24.
 //
 
 
@@ -13,35 +13,38 @@ struct ContentView: View {
     @State private var input = 0.0
     @State private var placeholderInputUnit = "C"
     @State private var placeholderOutputUnit = "K"
-    @State private var outputUnit = 0.0
     let inputUnits = ["K", "F", "C"]
     let outputUnits = ["K", "F", "C"]
     
-    var returnUnit: String {
+    var returnUnit: Double {
         
+        var inputValue = 0.0
+        var outputValue = 0.0
         
-//
-//        switch inputUnits {
-//        case ["K"]:
-//            outputUnit = input * 1.3
-//            print(outputUnit)
-//        case ["F"]:
-//            print("yay")
-//        case ["C"]:
-//            print("ajua")
-//        default:
-//            print("nope")
-//        }
-//
-//
-//        switch outputUnits {
-//        case ["F"]:
-//            outputUnit *= 1.3
-//        default:
-//            print("nope")
-//        }
+        switch placeholderInputUnit {
+        case "K":
+            inputValue = self.input - 273.15
+        case "C":
+            inputValue = self.input
+        case "F":
+            inputValue = (input - 32) * (5/9)
+        default:
+            print("NaN")
+        }
         
-        return "Keep trying boyo"
+        switch placeholderOutputUnit {
+        case "K":
+            outputValue = inputValue + 273.15
+        case "C":
+            outputValue = inputValue
+        case "F":
+            outputValue = (inputValue * (9 / 5)) + 32
+        default:
+            print("NaN")
+        }
+        
+        return outputValue
+        
     }
     
     var body: some View {
@@ -61,7 +64,7 @@ struct ContentView: View {
                         }
                     }
                     Section {
-                        Text(returnUnit)
+                        Text("\(returnUnit) \(placeholderOutputUnit)")
                     }
                 }
             }
