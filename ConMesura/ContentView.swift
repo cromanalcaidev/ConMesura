@@ -64,7 +64,7 @@ struct ContentView: View {
                         }
                     }
                     Section {
-                        Text("\(returnUnit) \(placeholderOutputUnit)")
+                        Text("\(returnUnit.formatted()) \(placeholderOutputUnit)")
                     }
                 }
             }

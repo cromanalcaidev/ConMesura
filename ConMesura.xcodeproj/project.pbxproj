@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C35E2AA2B9CB7E5006D47F3 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C35E2A92B9CB7E5006D47F3 /* Length.swift */; };
 		7CC8C11D2B9BD21800B28265 /* ConMesuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8C11C2B9BD21800B28265 /* ConMesuraApp.swift */; };
 		7CC8C11F2B9BD21800B28265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8C11E2B9BD21800B28265 /* ContentView.swift */; };
 		7CC8C1212B9BD21900B28265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8C1202B9BD21900B28265 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C35E2A92B9CB7E5006D47F3 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
 		7CC8C1192B9BD21800B28265 /* ConMesura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConMesura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8C11C2B9BD21800B28265 /* ConMesuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConMesuraApp.swift; sourceTree = "<group>"; };
 		7CC8C11E2B9BD21800B28265 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				7CC8C11E2B9BD21800B28265 /* ContentView.swift */,
 				7CC8C1202B9BD21900B28265 /* Assets.xcassets */,
 				7CC8C1222B9BD21900B28265 /* Preview Content */,
+				7C35E2A92B9CB7E5006D47F3 /* Length.swift */,
 			);
 			path = ConMesura;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC8C11F2B9BD21800B28265 /* ContentView.swift in Sources */,
+				7C35E2AA2B9CB7E5006D47F3 /* Length.swift in Sources */,
 				7CC8C11D2B9BD21800B28265 /* ConMesuraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
