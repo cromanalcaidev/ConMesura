@@ -2,7 +2,7 @@
 //  ConMesuraApp.swift
 //  ConMesura
 //
-//  Created by Carlos Román Alcaide on 9/3/24.
+//  Created by cromanalcaidev on 8/3/24.
 //
 
 import SwiftUI
